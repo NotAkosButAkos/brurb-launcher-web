@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Electron App</title>
+  <title>Brurb Launcher</title>
   <style>
     body {
         background-color: rgb(66, 66, 66);
@@ -71,17 +71,6 @@
     <div style="height: 20px;"></div>
     <h3 class="deftext">Hírek, újdonságok:</h3>
     <div style="height: 20px;"></div>
-    <div style="margin-inline: 100px;">
-        <a class="deftext" href="https://notakosbutakos.webnode.hu" target="_blank">https://notakosbutakos.webnode.hu</a>
-        <script>
-            const { shell } = require('electron');
-
-            document.querySelector('a').addEventListener('click', function(e) {
-                e.preventDefault();
-                shell.openExternal(this.href, { activate: true, mode: 'normal', width: 1000, height: 200 });
-            });
-        </script>
-    </div>
   </div>
 </body>
 </html>
