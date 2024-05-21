@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Electron App</title>
+  <title>Brurb Launcher</title>
   <style>
     body {
         background-color: rgb(66, 66, 66);
@@ -72,6 +72,16 @@
     <div id="content">
         <h1 class="deftext">Updates:</h1>
         <h2 class="deftext">No updates avalibe!</h2>
+
+        <button onclick="openApp()">Indítsd el az alkalmazást</button>
+
+        <script>
+            function openApp() {
+                if (confirm('Biztos meg szeretnéd nyitni ezt az alkalmazást?')) {
+                    window.location.href = 'myapp://open';
+                }
+            }
+        </script>
     </div>
   </div>
 </body>
